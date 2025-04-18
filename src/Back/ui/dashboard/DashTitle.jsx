@@ -1,4 +1,4 @@
-import { useUser } from "../Authentication/useUser";
+import { useUser } from "../authentication/useUser";
 
 function DashTitle() {
   const { user } = useUser();

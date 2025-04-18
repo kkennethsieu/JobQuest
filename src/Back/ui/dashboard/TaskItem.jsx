@@ -1,7 +1,7 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaRegCircle } from "react-icons/fa";
 import { useUpdateOnboarding } from "./useUpdateOnboarding";
-import { useUser } from "../Authentication/useUser";
+import { useUser } from "../authentication/useUser";
 
 function TaskItem({ task }) {
   const { user } = useUser();

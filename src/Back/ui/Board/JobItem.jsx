@@ -1,17 +1,19 @@
+import { useEffect, useRef, useState } from "react";
+import { useDraggable } from "@dnd-kit/core";
+
 import { formatDate, formatDateShort } from "../../helper/helper";
 import { MdDelete, MdModeEditOutline } from "react-icons/md";
 import { GrFormView } from "react-icons/gr";
-import IconButton from "./IconButton";
 import { IoMdMore } from "react-icons/io";
 
 import { useDeleteJob } from "./useDeleteJob";
+import IconButton from "./IconButton";
 import Modal from "./Modal";
 import AddForm from "./AddForm";
-import { useEffect, useRef, useState } from "react";
 import ViewForm from "./ViewForm/ViewForm";
-import { useChangeView } from "../../../context/ChangeViewContext";
-import { useDraggable } from "@dnd-kit/core";
 import ConfirmDialog from "../ConfirmDialog";
+
+import { useChangeView } from "../../../context/ChangeViewContext";
 
 function JobItem({ job, border, isDraggable = true }) {
   const { company, position, appliedOn, status, location, id, salary } = job;

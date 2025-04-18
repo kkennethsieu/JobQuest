@@ -1,6 +1,3 @@
-// Spinner.jsx
-import React from "react";
-
 function Spinner() {
   return (
     <div className="flex items-center justify-center min-h-40">

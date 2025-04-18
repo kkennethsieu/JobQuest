@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { useUser } from "../authentication/useUser";
 import useJobs from "../Board/useJobs";
 import Spinner from "../Spinner";
@@ -19,7 +18,6 @@ const statusColors = {
 function RecentActivityCard() {
   const { user, isLoading: loadingUser } = useUser();
   const { isLoading: loadingJobs, jobs } = useJobs(user.id);
-  const navigate = useNavigate();
 
   if (loadingUser || loadingJobs) return <Spinner />;
 

@@ -4,7 +4,7 @@ import SidebarLink from "./SideBarLink";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { FaRegClipboard } from "react-icons/fa";
-import { IoStatsChart, IoSettingsOutline } from "react-icons/io5";
+import { IoStatsChart } from "react-icons/io5";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { LuListCollapse } from "react-icons/lu";
 import { IoIosLogOut } from "react-icons/io";
