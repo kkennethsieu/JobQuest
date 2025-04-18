@@ -20,7 +20,7 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        "login-image": "url('login_wallpaper.jpg')",
+        "login-image": "url('/login_wallpaper.jpg')",
       },
     },
   },
