@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --toast-bg: #fff;
+  --toast-color: #1f2937; /* Tailwind gray-700 */
+}
+
+.dark {
+  --toast-bg: #1f2937; /* Tailwind gray-800 */
+  --toast-color: #f9fafb; /* Tailwind gray-100 */
+}
