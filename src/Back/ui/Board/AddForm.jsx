@@ -5,7 +5,7 @@ import { formateDateNum } from "../../helper/helper";
 import { useEffect, useRef } from "react";
 
 import { motion } from "framer-motion";
-import { useUser } from "../Authentication/useUser";
+import { useUser } from "../authentication/useUser";
 
 function AddForm({ onClose, jobToEdit = {}, viewDetails }) {
   const { id: editId, ...editValues } = jobToEdit;
