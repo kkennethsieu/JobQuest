@@ -5,6 +5,12 @@ import Spinner from "../Spinner";
 import { useGetUserProfile } from "./useGetUserProfile";
 import { useUpdateGoal } from "./useUpdateGoal";
 
+import { startOfWeek, endOfWeek, parseISO, isWithinInterval } from "date-fns";
+
+const now = new Date();
+const weekStart = startOfWeek(now, { weekStartsOn: 1 });
+const weekEnd = endOfWeek(now, { weekStartsOn: 1 });
+
 function ProgressChart() {
   const { user } = useUser();
   const { isLoading: loadingJobs, jobs } = useJobs(user.id);
@@ -12,10 +18,15 @@ function ProgressChart() {
   const { isLoading: updatingGoal, updateGoal } = useUpdateGoal();
   const { register, handleSubmit, reset } = useForm();
 
+  const weeklyJobs = jobs?.filter((job) => {
+    const jobDate = parseISO(job.created_at);
+    return isWithinInterval(jobDate, { start: weekStart, end: weekEnd });
+  });
+
   if (loadingJobs || loadingGoal) return <Spinner />;
 
   const goalAmount = data?.[0]?.jobGoal || 0;
-  const currentAmount = jobs.length || 0;
+  const currentAmount = weeklyJobs.length || 0;
   const rawPercentage = (currentAmount / goalAmount) * 100;
   const percentage = Math.min(rawPercentage, 100).toFixed(0);
 
