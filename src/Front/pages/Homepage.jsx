@@ -7,7 +7,10 @@ function Homepage() {
   return (
     <>
       <Title />
-      <img src="front_pic.webp" className="mt-20 mb-20 rounded-2xl" />
+      <img
+        src="front_pic.png"
+        className="mt-4 mb-4 rounded-2xl w-[80%] mx-auto"
+      />
       <HomeFeatures />
       <GetStarted />
     </>
