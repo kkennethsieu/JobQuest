@@ -1,4 +1,4 @@
-# JobQuest | Job Application Tracker
+![Screenshot 2025-06-08 at 1 36 42 PM (2)](https://github.com/user-attachments/assets/49b2b896-38ab-40e8-9ed9-4b1be6ddc100)# JobQuest | Job Application Tracker
 
 **JobQuest** is a web app designed to help job seekers efficiently track their job applications and interviews. It allows users to add, update, and manage job statuses while providing helpful insights and stats to monitor progress.
 
@@ -58,7 +58,13 @@ npm run dev
 Open your browser at `http://localhost:3000`
 
 ---
+## Screenshots
+![Screenshot 2025-06-08 at 1 37 03 PM](https://github.com/user-attachments/assets/76c2f04e-1d60-4a4e-99cc-ce12c37d27ba)
+![Screenshot 2025-06-08 at 1 36 58 PM](https://github.com/user-attachments/assets/7c0647a6-65cc-4688-a71a-3b7d0d00248c)
+![Screenshot 2025-06-08 at 1 36 55 PM](https://github.com/user-attachments/assets/df4fc5cf-6f6d-4ef6-9bcd-17a80fe1feab)
+![Screenshot 2025-06-08 at 1 36 42 PM](https://github.com/user-attachments/assets/a19de745-2620-45c3-9ef1-d00ff2283429)
 
+---
 ## Deployment
 
 The app is deployed on Vercel and can be accessed at:  
